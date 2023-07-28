@@ -22,11 +22,31 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Create an Azure VM(Virtual Machine) Windows 10, 4vCPUs
+- Install/Enable IIS in Windows with CGI and Common HTTP Features
+ World Wide Web Services -> Application Development Features ->
+[X] CGI
+[X] Common HTTP Features
+AND IIS Management Console
+Internet Information Services -> Web Management Tools -> IIS Management Console
+	[X] IIS Management Console
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+- Create the directory C:\PHP
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install VC_redist.x86.exe.
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi)
+- Typical Setup ->Launch Configuration Wizard (after install) ->Standard Configuration ->Password1(for example)
+- Open IIS as an Admin
+- Register PHP from within IIS
+- Reload IIS (Open IIS, Stop and Start the server)
+- Install osTicket v1.15.8
+- download osTicket from google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+- extract and copy "upload"folder to c:\inetpub\wwwroot
+- Within c:\inetpub\wwwroot, Rename"upload" to "osTicket"
+- Reload IIS (Open IIS, Stop and Start the server)
+- 
+
 
 <h2>Installation Steps</h2>
 

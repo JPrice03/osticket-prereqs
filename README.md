@@ -88,26 +88,55 @@ Browse to your help desk login page: http://localhost/osTicket/scp/login.php
 
 <h2>Installation Steps</h2>
 
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/JPrice03/osticket-prereqs/assets/140192548/2f7c3cae-858b-44a1-9264-dee4c2762e3f)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Install/Enable IIS in Windows with CGI and Common HTTP Features
+ World Wide Web Services -> Application Development Features ->
+[X] CGI
+[X] Common HTTP Features
+AND IIS Management Console.
 </p>
 <br />
 
+![image](https://github.com/JPrice03/osticket-prereqs/assets/140192548/3d3aa441-9baf-4971-8ca0-0039babd98d7)
+
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install PHP Manager for IIS (PHPManagerForIIS_V1.5.0.msi)
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install the Rewrite Module (rewrite_amd64_en-US.msi)
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) and unzip the contents into C:\PHP
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install VC_redist.x86.exe.
+- from the google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6, download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi).
 </p>
 <br />
 
+![image](https://github.com/JPrice03/osticket-prereqs/assets/140192548/6be9f9db-5b64-4ed5-ae36-60b3fd9b825b)
+
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Typical Setup ->Launch Configuration Wizard (after install) ->Standard Configuration ->Password1(for example).
 </p>
 <br />
+
+![image](https://github.com/JPrice03/osticket-prereqs/assets/140192548/1ba20f3b-d7be-40bc-a9b8-49ad14f6cf07)
+
+Open IIS as an Admin
+- Register PHP from within IIS
+- Reload IIS (Open IIS, Stop and Start the server)
+- Install osTicket v1.15.8
+- download osTicket from google drive folder https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+- extract and copy "upload"folder to c:\inetpub\wwwroot
+- Within c:\inetpub\wwwroot, Rename"upload" to "osTicket"
+- Reload IIS (Open IIS, Stop and Start the server)
+- Go to sites -> Default -> osTicket
+On the right, click “Browse *:80”
